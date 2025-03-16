@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- designing a colorful navbar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment4 - multi color navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width:600px){
+            ul{
+                flex-direction: column;
+                height: auto;
+            }
+        }
+        :root{
+            --color:red;
+            --seccolor:blue;
+            --greatcolor:lime;
+            --decoration:yellow;
+        }
+
+        .nav{
+            background-color: rgb(156, 250, 135);
+        }
+
+        div{
+            outline: 5px solid yellowgreen;
+            border-radius: 25px;
+            margin-top: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            flex-wrap: wrap;
+        }
+
+
+        ul li{
+            list-style: none;
+            padding: 2px;
+            margin: 2px;
+        }
+
+
+        ul li:first-child{
+            background-color: var(--color);
+        }
+
+        ul li:nth-child(2){
+            background-color: var(--seccolor);
+        }
+        ul li:nth-child(3){
+            background-color: var(--greatcolor);
+        }
+
+        ul li:nth-child(4){
+            background-color: var(--decoration);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>Resources</li>
+            <li>contact</li>
+            <li>about</li>
+        </ul>
+    </div>
+</body>
+</html>
