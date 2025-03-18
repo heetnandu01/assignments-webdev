@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout design</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color: lightpink;
+            height: 35px;
+            position: sticky;
+            top: 0;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        .container{
+            display: flex;
+            gap: 500px;
+        }
+        
+        .box1{
+            border: 2px solid black;
+            margin-top: 30px;
+            margin-left: 180px;
+            margin-bottom: 30px;
+            height: 350px;
+            width: 350px;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 250px;
+        }
+
+        .box2{
+            border: 2px solid black;
+            margin-top: 30px;
+            margin-bottom: 50px;
+            height: 350px;
+            width: 350px;
+            background-color: rgb(128, 30, 0);
+            color: white;
+            text-align: center;
+            line-height: 250px;
+        }
+        
+        .warehouse{
+            background-color: green;
+            margin-top: 10px;
+        }
+
+        .largebox {
+            margin-top: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            padding: 25px;
+            outline: 2px solid black;
+            border-radius: 40px;
+            background-color: rgb(0, 255, 179);
+            color: black;
+        }
+
+        div > p {
+            font-weight: bold;
+            font-size: medium;
+            font-style: italic;
+        }
+
+        .foot > footer{
+            text-align: center;
+            color: blue;
+            background-color: goldenrod;
+        }
+        
+        .img{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px; 
+        height: 50px;
+        border-radius: 100px;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        mix-blend-mode: multiply;
+        opacity: 0.9; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>company</li>
+            <li>contact</li>
+            <li>About</li>
+        </ul>
+    </div>
+    <div class="warehouse">
+        <div class="container">
+            <div class="box1">
+                <div>I am Box1</div>
+            </div>
+            <div class="box2">
+                <div>I am Box2</div>
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <img src="amazing.webp" alt="">
+    </div>
+
+
+    <div class="largebox">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur neque id, molestiae minus dolor recusandae. Aperiam nobis nisi doloribus fugit odio soluta, quia perspiciatis nam magnam deserunt, temporibus laudantium velit voluptatibus officiis necessitatibus maiores natus porro nemo expedita delectus assumenda, ut enim repellendus laborum. Minima magni eos animi, dicta quae, molestiae accusamus mollitia voluptate aliquam voluptates voluptas quidem odit sapiente ipsa repellat impedit id consectetur blanditiis earum beatae, repudiandae culpa! Natus cupiditate esse eligendi inventore at amet delectus asperiores quis veniam iusto deleniti molestiae, quasi assumenda vel officia? Quaerat officiis magnam soluta. Delectus dicta numquam dolorem molestias, repudiandae assumenda. Libero error et ipsa nesciunt accusamus, id temporibus quod dolorem eveniet excepturi ut deserunt voluptatum? Sapiente mollitia exercitationem autem aliquid alias doloremque consectetur dolorum fugit velit, possimus eos dolores! Alias, dolores? Praesentium ipsam in fuga voluptate? Impedit eligendi odit consequatur consectetur quibusdam vitae et, nulla praesentium eveniet debitis ducimus voluptatem iste tenetur omnis nostrum ratione ex minus facere est natus itaque. Laborum accusamus nisi officia laudantium iste, dolores, amet explicabo obcaecati error inventore harum voluptates soluta. Voluptatem vel inventore odio iste, possimus odit ut fuga deserunt officiis numquam, fugit asperiores, temporibus accusamus? Porro, laboriosam debitis? Dolorum quae fuga voluptates nam magnam nulla, ipsam commodi sint aperiam distinctio, inventore unde nisi. Mollitia, id, fugit cum nam quis necessitatibus totam, ullam doloribus soluta laboriosam asperiores dolorem quo accusamus facilis! Reprehenderit consectetur, beatae aspernatur consequatur voluptates dolor rerum ut! Sapiente animi nesciunt pariatur nam illo, veniam perferendis officiis natus dolorum ipsum reiciendis dolores autem molestiae iure quisquam, incidunt ducimus. Quam, quia nam reprehenderit cupiditate numquam dolores perferendis quo minus quisquam et mollitia praesentium adipisci? Soluta blanditiis autem commodi reprehenderit amet esse dignissimos voluptates perferendis excepturi! Nisi maxime officia, alias quae neque ipsa tempora laborum voluptates soluta vitae magni ad, doloremque quo harum, quisquam accusantium esse vel labore? Reprehenderit vel, error, obcaecati veniam, quod ipsum numquam nulla temporibus ex mollitia alias molestiae minus consequuntur. Possimus obcaecati ducimus animi sed adipisci ratione aperiam? Est doloribus rem excepturi nostrum dignissimos nihil, adipisci suscipit id incidunt aut veritatis reprehenderit corporis eius, numquam eos voluptatibus error quos eveniet amet sint provident cumque dolores, reiciendis odit. Harum facilis modi sint culpa nesciunt quis corporis porro hic. Iure odio, tenetur perspiciatis sunt aliquam laudantium fugit quae dolores neque fuga dolorum ad inventore temporibus sapiente ipsam labore aspernatur natus. Dicta, maxime! Itaque autem mollitia architecto molestias repellat odit voluptatibus cupiditate quaerat obcaecati, facilis tempora id maiores reprehenderit suscipit facere assumenda nesciunt nisi laboriosam voluptates porro, non harum? Laudantium quaerat ipsam qui sed. Quisquam provident omnis veritatis voluptas perspiciatis nostrum totam ipsam fuga repudiandae, quae rerum placeat velit ea quaerat tempora, illum eaque culpa, vero nesciunt necessitatibus. Fugiat nobis ipsam iste natus facere molestias pariatur ratione quibusdam. Saepe fugiat eligendi non facere iusto, aliquam quis quo laborum dignissimos ipsam ratione consequatur. Deserunt, quis sint dolorem ea ullam expedita perferendis ab harum quasi voluptas animi magni adipisci, nostrum voluptatem! Eum, corrupti obcaecati quidem tempore totam quod soluta, libero autem nihil illo error tenetur. Velit nihil explicabo perspiciatis eaque exercitationem molestias. Illo consequatur incidunt nesciunt autem molestias sapiente molestiae praesentium nulla beatae nobis deleniti enim nemo commodi iste cumque quasi sint, nostrum, exercitationem earum aliquid culpa animi quas laudantium! Dignissimos ullam veniam necessitatibus magnam harum natus numquam alias voluptatum architecto illum voluptates doloribus explicabo odit fugit, optio praesentium accusantium, sequi commodi suscipit hic voluptatibus quidem. Quidem accusamus nihil sequi perspiciatis. Unde consectetur accusantium, ut ex, repudiandae veniam optio hic doloribus doloremque cumque obcaecati exercitationem at neque beatae excepturi deserunt totam corrupti nisi ratione adipisci. Tenetur consequuntur numquam sint asperiores id suscipit dignissimos, veniam unde mollitia.</p>
+    </div>
+
+    <div class="foot">
+        <footer>
+            <h1>Golden state warriors</h1>
+        </footer>
+    </div>
+</body>
+</html>
