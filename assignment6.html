@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- designing a colorful navbar -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment6 - navbar using Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media (max-width:600px){
+            ul{
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+        }
+
+        body {
+            padding-top: 60px; /* Prevents content from hiding under fixed navbar */
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .nav{
+            background-color: rgb(169, 226, 249);
+            padding: 10px 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo img{
+            height: 40px; /* Reduced logo size */
+        }
+
+        ul{
+            display: flex;
+            padding: 10px 15px;
+            gap: 20px;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 2px;
+            margin: 2px;
+        }    
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="container">
+            <div class="logo">
+                <img src="ultra.edit.webp" alt="">
+            </div>
+            <ul>
+                <li>Products</li>
+                <li>For Business</li>
+                <li>Resources</li>
+                <li>Support</li>
+                <li>Our Company</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
