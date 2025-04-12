@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 14 - Hacking terminal</title>
+    <style>
+        body {
+            font-size: 18px;
+            background-color: #001a00;
+            color: #00ff00;
+            font-family: monospace;
+        }
+
+        .container {
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+            border: 1px solid #00ff00;
+        }
+
+        .blinking-dots::after {
+            content: '';
+            animation: blink 1s steps(1, end) infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                content: '';
+            }
+
+            25% {
+                content: '.';
+            }
+
+            50% {
+                content: '..';
+            }
+
+            75% {
+                content: '...';
+            }
+
+            100% {
+                content: '';
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">terminal</div>
+
+    <script>
+        const messages = [
+            "Initializing Hacking",
+            "Reading your Files",
+            "Password files Detected",
+            "Sending all passwords and personal files to server",
+            "Cleaning up"
+        ];
+
+        const terminalContainer = document.getElementsByClassName('container')[0];
+
+        for (let i = 0; i < messages.length; i++) {
+            let delay = Math.random() * 6000 + 1000;
+
+            setTimeout(() => {
+                const lastBlink = terminalContainer.getElementsByClassName('blinking-dots')[0];
+                if (lastBlink) {
+                    lastBlink.classList.remove('blinking-dots');
+                }
+                const p = document.createElement('p');
+                p.textContent = messages[i];
+                const span = document.createElement('span');
+                span.classList.add('blinking-dots');
+                p.appendChild(span);
+
+                terminalContainer.appendChild(p);
+            }, delay * i);
+        }
+    </script>
+</body>
+
+</html>
